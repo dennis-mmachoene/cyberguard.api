@@ -1,0 +1,173 @@
+export const phishingAwarenessModule = {
+  moduleId: 'phishing-awareness',
+  title: 'Recognizing and Avoiding Phishing Attacks',
+  description: 'Learn to identify phishing attempts and protect yourself from fraudulent emails, messages, and websites designed to steal your personal information.',
+  level: 'beginner',
+  order: 3,
+  content: {
+    introduction: 'Phishing is one of the most common and effective cyberattacks. Attackers impersonate legitimate organizations through emails, text messages, or websites to trick you into revealing sensitive information like passwords, credit card numbers, or personal details. Learning to recognize phishing attempts is essential for online safety.',
+    sections: [
+      {
+        title: 'What is Phishing?',
+        content: 'Phishing is a social engineering attack where criminals pose as trustworthy entities to deceive victims into providing confidential information. Phishing messages often create a sense of urgency, claim there is a problem with your account, or offer something too good to be true. The goal is to manipulate your emotions and bypass your logical thinking, prompting you to act quickly without verifying the legitimacy of the request.',
+        examples: [
+          'Email claiming your bank account will be suspended unless you verify immediately',
+          'Text message saying you won a prize and need to click a link to claim it',
+          'Email appearing to be from IT asking you to reset your password',
+          'Social media message from a "friend" asking for financial help',
+        ],
+        keyPoints: [
+          'Phishing exploits trust and creates urgency',
+          'Attackers impersonate legitimate organizations',
+          'Goal is to steal credentials or sensitive data',
+          'Can arrive via email, SMS, social media, or phone',
+        ],
+      },
+      {
+        title: 'Common Phishing Red Flags',
+        content: 'Phishing messages have telltale signs. Look for generic greetings like "Dear Customer" instead of your name, poor grammar and spelling errors, suspicious sender email addresses that mimic but do not match legitimate domains, and urgent or threatening language. Hover over links without clicking to see where they really lead. Legitimate organizations will not ask for sensitive information via email or text.',
+        examples: [
+          'Sender: "support@paypai.com" (notice the misspelling of PayPal)',
+          'Generic greeting: "Dear Valued Customer" instead of using your name',
+          'Urgent threat: "Your account will be closed in 24 hours!"',
+          'Suspicious link: Display text says "paypal.com" but URL is "paypa1.com"',
+        ],
+        keyPoints: [
+          'Check sender email addresses carefully for discrepancies',
+          'Beware of generic greetings and poor grammar',
+          'Hover over links to verify actual URLs',
+          'Question urgent or threatening requests',
+        ],
+      },
+      {
+        title: 'Types of Phishing Attacks',
+        content: 'Beyond generic phishing emails, there are targeted variations. Spear phishing targets specific individuals with personalized information to appear more legitimate. Whaling targets high-profile individuals like executives. Smishing uses SMS text messages instead of email. Vishing involves voice calls where attackers pose as legitimate representatives. Each type uses similar psychological manipulation but through different communication channels.',
+        examples: [
+          'Spear phishing: Email referencing your recent purchase from a specific store',
+          'Whaling: Email to CEO appearing to be from the company\'s legal counsel',
+          'Smishing: Text claiming to be from your bank about suspicious activity',
+          'Vishing: Phone call from "Microsoft support" about viruses on your computer',
+        ],
+        keyPoints: [
+          'Spear phishing uses personal information',
+          'Whaling targets executives and high-value individuals',
+          'Smishing arrives via text message',
+          'Vishing uses voice calls',
+        ],
+      },
+      {
+        title: 'How to Verify Legitimacy',
+        content: 'When you receive a suspicious message, do not click links or respond directly. Instead, verify its legitimacy through independent channels. If an email claims to be from your bank, call the official number from their website or your bank card—not the number in the email. Look up the company website separately rather than clicking email links. Check your account by logging in directly through the official website or app, not through any links provided.',
+        examples: [
+          'Receive suspicious bank email → Visit bank.com directly, do not click email links',
+          'Get unusual request from coworker → Call or message them through known channels',
+          'Package delivery notification → Check tracking through the carrier\'s official site',
+          'IRS email about taxes → Remember that the IRS never initiates contact via email',
+        ],
+        keyPoints: [
+          'Never click suspicious links',
+          'Contact organizations through official channels',
+          'Log in directly through official websites',
+          'When in doubt, verify before acting',
+        ],
+      },
+      {
+        title: 'What to Do If You Fall for Phishing',
+        content: 'If you realize you have fallen for a phishing attack, act immediately to minimize damage. Change passwords for the affected account and any other accounts where you used the same password. Enable two-factor authentication if you have not already. Contact your bank if financial information was compromised. Run a full antivirus scan if you downloaded anything. Report the phishing attempt to the organization being impersonated and to authorities like the FTC or your email provider.',
+        examples: [
+          'Clicked a phishing link and entered password → Change passwords immediately',
+          'Downloaded a file from phishing email → Run antivirus scan, disconnect from network',
+          'Entered credit card info → Contact bank to freeze card and monitor for fraud',
+          'Gave personal information → Place fraud alert on credit reports',
+        ],
+        keyPoints: [
+          'Act immediately if you have been phished',
+          'Change compromised passwords right away',
+          'Contact financial institutions if money is at risk',
+          'Report phishing to relevant authorities',
+        ],
+      },
+    ],
+    summary: 'Phishing attacks are prevalent because they exploit human psychology rather than technical vulnerabilities. By recognizing common red flags, verifying suspicious messages through independent channels, and knowing how to respond if you have been targeted, you can protect yourself from these deceptive attacks. Remember: when something seems urgent or too good to be true, take a moment to verify before acting.',
+  },
+  questions: [
+    {
+      question: 'What is the primary goal of a phishing attack?',
+      options: [
+        'To damage your computer hardware',
+        'To steal sensitive information like passwords and credit card numbers',
+        'To slow down your internet connection',
+        'To display advertisements on your screen',
+      ],
+      correctAnswer: 1,
+      explanation: 'The primary goal of phishing is to steal sensitive information such as passwords, credit card numbers, social security numbers, or other personal data. Attackers use social engineering to trick victims into voluntarily providing this information.',
+      difficulty: 'easy',
+      points: 10,
+    },
+    {
+      question: 'Which of the following is a common red flag in phishing emails?',
+      options: [
+        'Personalized greeting using your full name',
+        'Professional formatting and correct grammar',
+        'Generic greeting like "Dear Customer" and urgent threats',
+        'Clear contact information for the sender',
+      ],
+      correctAnswer: 2,
+      explanation: 'Generic greetings combined with urgent threats are common phishing red flags. Legitimate companies usually address you by name and do not use threatening language to create urgency. Other red flags include poor grammar, suspicious sender addresses, and requests for sensitive information.',
+      difficulty: 'easy',
+      points: 10,
+    },
+    {
+      question: 'What is spear phishing?',
+      options: [
+        'A phishing attack using voice calls',
+        'A targeted phishing attack using personalized information',
+        'A phishing attack sent via text message',
+        'A phishing attack targeting only fish-related businesses',
+      ],
+      correctAnswer: 1,
+      explanation: 'Spear phishing is a targeted phishing attack that uses personalized information about the victim to appear more legitimate and convincing. Unlike generic phishing emails sent to millions, spear phishing attacks are customized to specific individuals or organizations.',
+      difficulty: 'medium',
+      points: 15,
+    },
+    {
+      question: 'What is the safest way to verify a suspicious email claiming to be from your bank?',
+      options: [
+        'Click the link in the email to check your account',
+        'Reply to the email asking if it is legitimate',
+        'Call the phone number provided in the email',
+        'Visit your bank\'s official website directly and log in there',
+      ],
+      correctAnswer: 3,
+      explanation: 'The safest way to verify a suspicious email is to visit your bank\'s official website directly (by typing the URL yourself or using a bookmarked link) and log in there to check your account. Never click links in suspicious emails, reply to them, or call numbers provided in the email.',
+      difficulty: 'medium',
+      points: 15,
+    },
+    {
+      question: 'What should you do first if you realize you have entered your password on a phishing site?',
+      options: [
+        'Wait to see if anything bad happens',
+        'Immediately change your password for that account',
+        'Delete your browser history',
+        'Turn off your computer',
+      ],
+      correctAnswer: 1,
+      explanation: 'If you realize you have entered your password on a phishing site, immediately change your password for that account and any other accounts where you use the same password. Quick action can prevent attackers from accessing your accounts. Also enable two-factor authentication if available.',
+      difficulty: 'easy',
+      points: 10,
+    },
+  ],
+  estimatedDuration: 20,
+  prerequisites: [],
+  learningObjectives: [
+    'Understand what phishing is and how it works',
+    'Identify common red flags in phishing attempts',
+    'Learn about different types of phishing (spear phishing, whaling, smishing, vishing)',
+    'Know how to verify suspicious messages and respond to phishing attacks',
+  ],
+  tags: ['phishing', 'social engineering', 'email security', 'scams', 'awareness', 'beginner'],
+  isActive: true,
+  totalPoints: 60,
+};
+
+export default phishingAwarenessModule;

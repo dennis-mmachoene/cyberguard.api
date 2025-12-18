@@ -1,0 +1,87 @@
+export const advancedCryptographyModule = {
+  moduleId: 'advanced-cryptography',
+  title: 'Advanced Cryptography Concepts',
+  description: 'Explore advanced cryptographic techniques including digital signatures, key management, and emerging cryptographic technologies.',
+  level: 'advanced',
+  order: 5,
+  content: {
+    introduction: 'Advanced cryptography extends beyond basic encryption to encompass digital signatures, key management, quantum-resistant algorithms, and specialized cryptographic protocols. Understanding these concepts enables secure system design and proper cryptographic implementation.',
+    sections: [
+      {
+        title: 'Digital Signatures and Certificates',
+        content: 'Digital signatures provide authentication, integrity, and non-repudiation. The signer creates a signature using their private key; anyone can verify using the public key. Digital certificates bind identities to public keys through trusted Certificate Authorities. Certificate chains establish trust from root CAs through intermediates to end entities. Certificate revocation handles compromised certificates through CRLs or OCSP.',
+        keyPoints: ['Signatures prove authenticity and integrity', 'Certificates bind identities to keys', 'Trust chains enable PKI'],
+        examples: ['Code signing certificates', 'Email S/MIME signatures', 'HTTPS server certificates'],
+      },
+      {
+        title: 'Key Management Lifecycle',
+        content: 'Proper key management is critical for cryptographic security. The lifecycle includes generation (using strong random sources), distribution (secure channels), storage (hardware security modules or key management services), rotation (regular key changes), and destruction (secure deletion). Poor key management undermines even strong algorithms. Hardware security modules (HSMs) provide secure key storage and operations.',
+        keyPoints: ['Key management is critical to security', 'Lifecycle covers generation to destruction', 'HSMs provide hardware protection'],
+        examples: ['AWS KMS for cloud key management', 'HSM for root CA keys', 'Key rotation every 90 days'],
+      },
+      {
+        title: 'Elliptic Curve Cryptography',
+        content: 'ECC provides equivalent security to RSA with much smaller key sizes. A 256-bit ECC key offers similar security to a 3072-bit RSA key, enabling faster operations and lower resource consumption. ECC is increasingly used in mobile devices, IoT, and modern protocols. Common curves include P-256, P-384, and Curve25519.',
+        keyPoints: ['Smaller keys than RSA for equivalent security', 'Better performance for mobile and IoT', 'Widely adopted in modern systems'],
+        examples: ['ECDSA for digital signatures', 'ECDH for key exchange', 'EdDSA (Curve25519)'],
+      },
+      {
+        title: 'Post-Quantum Cryptography',
+        content: 'Quantum computers threaten current public-key cryptography. RSA and ECC could be broken by sufficiently powerful quantum computers using Shor\'s algorithm. Post-quantum cryptography develops algorithms resistant to quantum attacks. NIST is standardizing quantum-resistant algorithms. Organizations should prepare for cryptographic agility to transition when needed.',
+        keyPoints: ['Quantum computers threaten current crypto', 'New algorithms resist quantum attacks', 'Prepare for future transition'],
+        examples: ['Lattice-based cryptography', 'Hash-based signatures', 'NIST PQC standardization'],
+      },
+    ],
+    summary: 'Advanced cryptography encompasses digital signatures for authentication and non-repudiation, proper key management throughout the cryptographic lifecycle, efficient elliptic curve cryptography for modern systems, and preparation for post-quantum threats. Understanding these concepts enables secure system design and anticipation of future cryptographic needs.',
+  },
+  questions: [
+    {
+      question: 'What three properties do digital signatures provide?',
+      options: ['Encryption, speed, and simplicity', 'Authentication, integrity, and non-repudiation', 'Confidentiality, availability, and safety', 'Privacy, performance, and portability'],
+      correctAnswer: 1,
+      explanation: 'Digital signatures provide authentication (verifies who signed), integrity (detects tampering), and non-repudiation (signer cannot deny signing). They do not provide confidentiality—signed messages can be read by anyone.',
+      difficulty: 'medium',
+      points: 15,
+    },
+    {
+      question: 'What is the advantage of ECC over RSA?',
+      options: ['ECC is older and more tested', 'ECC provides equivalent security with much smaller keys', 'ECC is easier to implement', 'ECC works without mathematics'],
+      correctAnswer: 1,
+      explanation: 'ECC\'s main advantage is providing equivalent security to RSA with much smaller key sizes. For example, a 256-bit ECC key offers similar security to a 3072-bit RSA key, resulting in faster operations and lower resource requirements.',
+      difficulty: 'medium',
+      points: 15,
+    },
+    {
+      question: 'Why is proper key management critical?',
+      options: ['It makes algorithms faster', 'Poor key management undermines even strong algorithms', 'It is required by law', 'It simplifies implementation'],
+      correctAnswer: 1,
+      explanation: 'Poor key management undermines even the strongest cryptographic algorithms. If keys are exposed, stored insecurely, or not rotated properly, the encryption they protect is compromised regardless of algorithm strength. Key management is often the weakest link in cryptographic systems.',
+      difficulty: 'easy',
+      points: 10,
+    },
+    {
+      question: 'What threat does post-quantum cryptography address?',
+      options: ['Current hackers', 'Future quantum computers breaking current public-key crypto', 'Slow encryption speed', 'Large key sizes'],
+      correctAnswer: 1,
+      explanation: 'Post-quantum cryptography addresses the threat of sufficiently powerful quantum computers breaking current public-key cryptographic algorithms like RSA and ECC using Shor\'s algorithm. New quantum-resistant algorithms are being developed and standardized.',
+      difficulty: 'hard',
+      points: 20,
+    },
+    {
+      question: 'What is a Hardware Security Module (HSM)?',
+      options: ['A type of malware', 'Physical device providing secure key storage and cryptographic operations', 'Software encryption program', 'Network security appliance'],
+      correctAnswer: 1,
+      explanation: 'An HSM is a physical device that provides secure key storage and performs cryptographic operations in hardware. HSMs protect keys from extraction and provide tamper-resistant environments, making them ideal for high-security applications like root certificate authorities.',
+      difficulty: 'medium',
+      points: 15,
+    },
+  ],
+  estimatedDuration: 30,
+  prerequisites: ['encryption-basics'],
+  learningObjectives: ['Understand digital signatures and PKI', 'Master key management lifecycle', 'Learn about ECC benefits', 'Prepare for post-quantum cryptography'],
+  tags: ['cryptography', 'digital signatures', 'key management', 'ecc', 'post-quantum', 'advanced'],
+  isActive: true,
+  totalPoints: 75,
+};
+
+export default advancedCryptographyModule;

@@ -1,0 +1,87 @@
+export const complianceStandardsModule = {
+  moduleId: 'compliance-standards',
+  title: 'Regulatory Compliance and Standards',
+  description: 'Understand major compliance requirements and regulations governing cybersecurity and data protection across industries.',
+  level: 'advanced',
+  order: 4,
+  content: {
+    introduction: 'Compliance requirements mandate specific security and privacy controls. Organizations must understand applicable regulations based on industry, geography, and data types. Non-compliance risks legal penalties, financial losses, and reputational damage.',
+    sections: [
+      {
+        title: 'GDPR (General Data Protection Regulation)',
+        content: 'GDPR is EU regulation governing personal data protection and privacy. It applies to any organization processing EU residents\' data. Key requirements include lawful basis for processing, data minimization, purpose limitation, consent management, breach notification, and data subject rights. Violations face fines up to 4% of global revenue or €20 million.',
+        keyPoints: ['Applies to EU residents\' data globally', 'Strong data subject rights', 'Significant penalties for violations'],
+        examples: ['Right to erasure', '72-hour breach notification', 'Privacy by design'],
+      },
+      {
+        title: 'HIPAA (Health Insurance Portability and Accountability Act)',
+        content: 'HIPAA protects health information in the United States. Covered entities (healthcare providers, health plans, clearinghouses) and business associates must implement administrative, physical, and technical safeguards. Requirements include access controls, audit logs, encryption, employee training, and breach notification.',
+        keyPoints: ['Protects health information', 'Applies to covered entities and business associates', 'Multiple safeguard categories'],
+        examples: ['Electronic Protected Health Information (ePHI)', 'Security Rule technical safeguards', 'Privacy Rule patient rights'],
+      },
+      {
+        title: 'PCI DSS (Payment Card Industry Data Security Standard)',
+        content: 'PCI DSS applies to organizations handling payment card data. Twelve requirements cover network security, data protection, vulnerability management, access control, monitoring, and security policies. Compliance levels depend on transaction volume. Non-compliance risks card brand fines and loss of payment processing ability.',
+        keyPoints: ['12 requirements across 6 categories', '4 compliance levels by volume', 'Regular assessments required'],
+        examples: ['Encrypt cardholder data', 'Restrict access by business need', 'Regular vulnerability scanning'],
+      },
+      {
+        title: 'Other Important Regulations',
+        content: 'CCPA grants California residents privacy rights similar to GDPR. SOX mandates financial reporting controls including IT systems. FISMA requires federal agencies to secure information systems. Industry-specific regulations include FERPA (education), GLBA (financial), and many others. Global operations require navigating multiple regulatory regimes simultaneously.',
+        keyPoints: ['Multiple regulations based on industry and geography', 'Requirements often overlap', 'Compliance programs must address all applicable regulations'],
+        examples: ['CCPA: California consumer privacy', 'SOX: Financial controls', 'FERPA: Student records'],
+      },
+    ],
+    summary: 'Regulatory compliance requires understanding and implementing mandated security and privacy controls. GDPR protects EU personal data with strong rights and penalties. HIPAA safeguards US health information. PCI DSS secures payment card data. Organizations must identify applicable regulations, implement required controls, maintain documentation, and demonstrate ongoing compliance through audits and assessments.',
+  },
+  questions: [
+    {
+      question: 'What is the maximum GDPR fine for serious violations?',
+      options: ['€1 million', '€10 million', '4% of global revenue or €20 million, whichever is higher', '$100,000'],
+      correctAnswer: 2,
+      explanation: 'GDPR allows fines up to 4% of global annual revenue or €20 million, whichever is higher, for the most serious violations. This significant penalty incentivizes strong data protection practices.',
+      difficulty: 'medium',
+      points: 15,
+    },
+    {
+      question: 'What does HIPAA protect?',
+      options: ['Payment card data', 'Health information', 'Trade secrets', 'Government classified information'],
+      correctAnswer: 1,
+      explanation: 'HIPAA (Health Insurance Portability and Accountability Act) protects health information in the United States, specifically Protected Health Information (PHI) and Electronic Protected Health Information (ePHI).',
+      difficulty: 'easy',
+      points: 10,
+    },
+    {
+      question: 'How many main requirements does PCI DSS have?',
+      options: ['6', '12', '18', '24'],
+      correctAnswer: 1,
+      explanation: 'PCI DSS has 12 main requirements organized into 6 categories: Build and Maintain Secure Network, Protect Cardholder Data, Maintain Vulnerability Management Program, Implement Strong Access Control, Monitor and Test Networks, and Maintain Information Security Policy.',
+      difficulty: 'medium',
+      points: 15,
+    },
+    {
+      question: 'What is the GDPR requirement for breach notification?',
+      options: ['Immediately', 'Within 72 hours', 'Within 30 days', 'No specific timeframe'],
+      correctAnswer: 1,
+      explanation: 'GDPR requires organizations to notify the relevant supervisory authority within 72 hours of becoming aware of a personal data breach, unless the breach is unlikely to result in risk to individuals\' rights and freedoms.',
+      difficulty: 'hard',
+      points: 20,
+    },
+    {
+      question: 'Why must organizations understand multiple compliance regulations?',
+      options: ['To increase complexity', 'Different regulations apply based on industry, geography, and data types', 'All regulations are identical', 'Compliance is optional'],
+      correctAnswer: 1,
+      explanation: 'Organizations must understand multiple regulations because different laws apply based on factors like industry sector, geographic location of customers/operations, and types of data processed. Global operations often require simultaneous compliance with multiple regulatory regimes.',
+      difficulty: 'easy',
+      points: 10,
+    },
+  ],
+  estimatedDuration: 30,
+  prerequisites: ['security-frameworks'],
+  learningObjectives: ['Understand major compliance regulations', 'Recognize requirements for each regulation', 'Apply compliance concepts to organizational context'],
+  tags: ['compliance', 'gdpr', 'hipaa', 'pci dss', 'regulations', 'advanced'],
+  isActive: true,
+  totalPoints: 70,
+};
+
+export default complianceStandardsModule;

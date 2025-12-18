@@ -1,0 +1,173 @@
+export const passwordSecurityModule = {
+  moduleId: 'password-security',
+  title: 'Password Security Best Practices',
+  description: 'Master the art of creating, managing, and protecting strong passwords to secure your online accounts from unauthorized access.',
+  level: 'beginner',
+  order: 2,
+  content: {
+    introduction: 'Passwords are the first line of defense for your online accounts. Weak or reused passwords are one of the most common ways hackers gain unauthorized access to personal information, financial accounts, and sensitive data. Learning proper password security practices is essential for protecting your digital identity.',
+    sections: [
+      {
+        title: 'What Makes a Password Strong?',
+        content: 'A strong password is long, complex, and unique. It should be at least 12 characters long (longer is better), contain a mix of uppercase and lowercase letters, numbers, and special symbols. Avoid dictionary words, personal information like birthdays or names, and common patterns like "123456" or "password". The best passwords are random combinations that are difficult for humans to guess and computers to crack through brute force attacks.',
+        examples: [
+          'Strong: "M7$nQ2#pL9@vX4!w" (random, 16 characters)',
+          'Weak: "password123" (common word + sequence)',
+          'Weak: "JohnDoe1985" (name + birth year)',
+          'Strong: "Tr0p!cal$un$3t#2024" (complex with substitutions)',
+        ],
+        keyPoints: [
+          'Aim for at least 12-16 characters',
+          'Mix uppercase, lowercase, numbers, and symbols',
+          'Avoid personal information and dictionary words',
+          'Never reuse passwords across accounts',
+        ],
+      },
+      {
+        title: 'The Danger of Password Reuse',
+        content: 'Using the same password across multiple accounts is extremely risky. When one website suffers a data breach, hackers will try those stolen credentials on other popular services—a technique called credential stuffing. If you reuse passwords, a breach at one minor website could compromise your email, banking, and social media accounts. Every account should have a unique password to contain the damage if one account is compromised.',
+        examples: [
+          'Breach scenario: Your favorite forum is hacked, exposing your email and password',
+          'If you reused that password for Gmail, hackers now have access to your email',
+          'With email access, they can reset passwords for your other accounts',
+          'Using unique passwords limits damage to just the breached account',
+        ],
+        keyPoints: [
+          'Each account needs a unique password',
+          'Credential stuffing exploits password reuse',
+          'One breach should not cascade to all accounts',
+          'Password managers make unique passwords manageable',
+        ],
+      },
+      {
+        title: 'Password Managers',
+        content: 'Password managers are tools that securely store and generate strong, unique passwords for all your accounts. You only need to remember one master password to unlock the password manager, which then autofills credentials for your websites and apps. Popular options include Bitwarden, 1Password, LastPass, and Dashlane. Password managers eliminate the need to remember dozens of complex passwords and make it easy to use unique passwords everywhere.',
+        examples: [
+          'Bitwarden: Open-source, free for personal use',
+          '1Password: User-friendly with family sharing features',
+          'LastPass: Free tier with multi-device sync',
+          'Dashlane: Includes VPN and dark web monitoring',
+        ],
+        keyPoints: [
+          'Password managers generate and store complex passwords',
+          'You only need to remember one master password',
+          'Enable auto-fill for convenience',
+          'Choose a reputable, well-reviewed password manager',
+        ],
+      },
+      {
+        title: 'Two-Factor Authentication (2FA)',
+        content: 'Two-factor authentication adds an extra layer of security beyond just passwords. Even if someone steals or guesses your password, they still need a second factor—usually a code from your phone, a biometric scan, or a hardware key—to access your account. Enable 2FA on all accounts that support it, especially email, banking, and social media. Authenticator apps like Google Authenticator or Authy are more secure than SMS-based 2FA.',
+        examples: [
+          'SMS 2FA: Receive a code via text message (less secure)',
+          'Authenticator app: Generate time-based codes on your phone (more secure)',
+          'Hardware key: Use a physical USB security key like YubiKey (most secure)',
+          'Biometric 2FA: Fingerprint or face recognition on your device',
+        ],
+        keyPoints: [
+          '2FA protects even if your password is compromised',
+          'Use authenticator apps over SMS when possible',
+          'Enable 2FA on all critical accounts',
+          'Hardware keys offer the highest security',
+        ],
+      },
+      {
+        title: 'When and How to Change Passwords',
+        content: 'You should change passwords immediately if you suspect an account has been compromised, after a data breach at a service you use, or if you have been using weak or reused passwords. Do not change passwords unnecessarily—frequent changes without reason can lead to weaker passwords as people resort to simple patterns. Focus on using strong, unique passwords from the start. If you must change a password, make sure the new one is completely different, not just a variation of the old one.',
+        examples: [
+          'Change immediately: You clicked a phishing link and entered your password',
+          'Change immediately: A website you use announces a data breach',
+          'No need to change: Your password is strong, unique, and not compromised',
+          'Bad change: Changing "Password1" to "Password2" (too similar)',
+        ],
+        keyPoints: [
+          'Change passwords after suspected compromise',
+          'Change passwords after confirmed breaches',
+          'Do not change strong passwords unnecessarily',
+          'New passwords should be completely different',
+        ],
+      },
+    ],
+    summary: 'Password security is a critical component of personal cybersecurity. By creating strong, unique passwords, using a password manager, enabling two-factor authentication, and knowing when to change passwords, you dramatically reduce the risk of account compromise. These practices may seem inconvenient at first, but they become second nature and provide essential protection for your digital life.',
+  },
+  questions: [
+    {
+      question: 'What is the minimum recommended length for a strong password?',
+      options: [
+        '6 characters',
+        '8 characters',
+        '12 characters',
+        '20 characters',
+      ],
+      correctAnswer: 2,
+      explanation: 'The minimum recommended length for a strong password is 12 characters. Longer passwords are exponentially harder to crack through brute force attacks. While 8 characters used to be the standard, modern computing power makes 12+ characters necessary for good security.',
+      difficulty: 'easy',
+      points: 10,
+    },
+    {
+      question: 'Why is password reuse dangerous?',
+      options: [
+        'It makes passwords easier to forget',
+        'It violates website terms of service',
+        'One breach can compromise multiple accounts',
+        'It makes passwords load slower',
+      ],
+      correctAnswer: 2,
+      explanation: 'Password reuse is dangerous because one breach can compromise multiple accounts. Hackers use stolen credentials from one site to try accessing other popular services through credential stuffing attacks. Using unique passwords for each account limits damage to just the breached site.',
+      difficulty: 'easy',
+      points: 10,
+    },
+    {
+      question: 'What is the primary benefit of using a password manager?',
+      options: [
+        'It makes websites load faster',
+        'It allows you to use strong, unique passwords without memorizing them',
+        'It prevents all types of cyberattacks',
+        'It encrypts your internet connection',
+      ],
+      correctAnswer: 1,
+      explanation: 'The primary benefit of a password manager is that it allows you to use strong, unique passwords for every account without having to memorize them all. The password manager securely stores your passwords and autofills them when needed, requiring you to remember only one master password.',
+      difficulty: 'medium',
+      points: 15,
+    },
+    {
+      question: 'Which two-factor authentication method is considered most secure?',
+      options: [
+        'SMS text message codes',
+        'Email verification links',
+        'Hardware security keys',
+        'Security questions',
+      ],
+      correctAnswer: 2,
+      explanation: 'Hardware security keys (like YubiKey) are considered the most secure 2FA method. They are physical devices that cannot be remotely intercepted, unlike SMS codes which can be hijacked through SIM swapping, or email which could be compromised.',
+      difficulty: 'medium',
+      points: 15,
+    },
+    {
+      question: 'When should you change your password?',
+      options: [
+        'Every 30 days regardless of circumstances',
+        'Only when the account is compromised or after a breach',
+        'Whenever you remember to do it',
+        'Never, once set it should remain the same',
+      ],
+      correctAnswer: 1,
+      explanation: 'You should change your password when your account is compromised, after a confirmed data breach at a service you use, or if you have been using a weak or reused password. Frequent unnecessary password changes can lead to weaker passwords as people resort to simple patterns or variations.',
+      difficulty: 'medium',
+      points: 15,
+    },
+  ],
+  estimatedDuration: 18,
+  prerequisites: [],
+  learningObjectives: [
+    'Understand what makes passwords strong and why complexity matters',
+    'Recognize the risks of password reuse and credential stuffing',
+    'Learn to use password managers effectively',
+    'Enable and understand two-factor authentication',
+  ],
+  tags: ['passwords', 'authentication', '2fa', 'password managers', 'security', 'beginner'],
+  isActive: true,
+  totalPoints: 65,
+};
+
+export default passwordSecurityModule;

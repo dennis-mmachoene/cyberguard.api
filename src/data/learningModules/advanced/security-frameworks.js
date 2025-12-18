@@ -1,0 +1,87 @@
+export const securityFrameworksModule = {
+  moduleId: 'security-frameworks',
+  title: 'Security Frameworks and Standards',
+  description: 'Explore major cybersecurity frameworks and standards that guide organizational security programs and compliance efforts.',
+  level: 'advanced',
+  order: 3,
+  content: {
+    introduction: 'Security frameworks provide structured approaches to managing cybersecurity. They offer best practices, controls, and guidelines for building effective security programs. Understanding major frameworks helps organizations establish comprehensive security postures and demonstrate compliance.',
+    sections: [
+      {
+        title: 'NIST Cybersecurity Framework',
+        content: 'The NIST Cybersecurity Framework organizes security activities into five core functions: Identify, Protect, Detect, Respond, and Recover. It provides a common language for managing cybersecurity risks regardless of organization size or industry. The framework is voluntary, flexible, and widely adopted across sectors.',
+        keyPoints: ['Five core functions cover security lifecycle', 'Risk-based and flexible approach', 'Widely adopted across industries'],
+        examples: ['Identify: Asset management', 'Protect: Access control', 'Detect: Security monitoring'],
+      },
+      {
+        title: 'ISO 27001/27002',
+        content: 'ISO 27001 specifies requirements for Information Security Management Systems (ISMS). ISO 27002 provides implementation guidance and controls. Together they enable systematic information security management. Certification demonstrates commitment to security and is often required by customers and partners.',
+        keyPoints: ['International standard for ISMS', 'Certification available', 'Comprehensive control set'],
+        examples: ['114 controls across 14 categories', 'Regular audits for certification', 'Continuous improvement cycle'],
+      },
+      {
+        title: 'CIS Controls',
+        content: 'The Center for Internet Security (CIS) Controls prioritize 18 specific security actions that defend against common attacks. Controls are organized by implementation groups based on organization size and resources. They provide actionable, prioritized guidance focused on effectiveness.',
+        keyPoints: ['18 prioritized controls', 'Implementation groups for different org sizes', 'Defense against common threats'],
+        examples: ['Control 1: Inventory of assets', 'Control 5: Secure configurations', 'Control 16: Application security'],
+      },
+      {
+        title: 'COBIT and SOC 2',
+        content: 'COBIT provides IT governance and management framework. SOC 2 reports demonstrate controls for security, availability, confidentiality, processing integrity, and privacy. Both are important for demonstrating trustworthiness to stakeholders.',
+        keyPoints: ['COBIT for IT governance', 'SOC 2 for service provider trust', 'Focus on controls and auditing'],
+        examples: ['SOC 2 Type 2: Controls over 6-12 month period', 'COBIT domains: governance and management'],
+      },
+    ],
+    summary: 'Security frameworks provide structured approaches to cybersecurity. NIST CSF offers flexible risk management. ISO 27001 enables systematic ISMS with certification. CIS Controls prioritize practical security actions. Understanding frameworks helps organizations build comprehensive security programs aligned with industry best practices.',
+  },
+  questions: [
+    {
+      question: 'What are the five core functions of the NIST Cybersecurity Framework?',
+      options: ['Plan, Do, Check, Act, Improve', 'Identify, Protect, Detect, Respond, Recover', 'Prevent, Monitor, Analyze, Report, Review', 'Assess, Design, Implement, Test, Maintain'],
+      correctAnswer: 1,
+      explanation: 'The NIST Cybersecurity Framework has five core functions: Identify (understand assets and risks), Protect (implement safeguards), Detect (find security events), Respond (take action on incidents), and Recover (restore capabilities).',
+      difficulty: 'medium',
+      points: 15,
+    },
+    {
+      question: 'What does ISO 27001 certification demonstrate?',
+      options: ['Complete immunity from cyber attacks', 'Systematic approach to information security management', 'Compliance with all security regulations', 'No security vulnerabilities exist'],
+      correctAnswer: 1,
+      explanation: 'ISO 27001 certification demonstrates an organization has implemented a systematic approach to managing information security through an ISMS. It shows commitment to security best practices but does not guarantee immunity from attacks or eliminate all vulnerabilities.',
+      difficulty: 'easy',
+      points: 10,
+    },
+    {
+      question: 'How many controls are defined in CIS Controls?',
+      options: ['18', '50', '114', '200'],
+      correctAnswer: 0,
+      explanation: 'The CIS Controls define 18 prioritized security actions that defend against common cyber attacks. These controls are organized by implementation groups to help organizations of different sizes focus on appropriate security measures.',
+      difficulty: 'easy',
+      points: 10,
+    },
+    {
+      question: 'What is a SOC 2 Type 2 report?',
+      options: ['Security incident report', 'Report on controls effectiveness over time', 'System vulnerability assessment', 'Network architecture diagram'],
+      correctAnswer: 1,
+      explanation: 'A SOC 2 Type 2 report evaluates the effectiveness of security controls over a period of time (typically 6-12 months). Unlike Type 1 which assesses controls at a point in time, Type 2 demonstrates sustained control effectiveness.',
+      difficulty: 'hard',
+      points: 20,
+    },
+    {
+      question: 'Why do organizations implement security frameworks?',
+      options: ['They are always legally required', 'To provide structured approaches to managing security', 'To eliminate all security risks', 'Only for marketing purposes'],
+      correctAnswer: 1,
+      explanation: 'Organizations implement security frameworks to provide structured, comprehensive approaches to managing cybersecurity. Frameworks offer best practices, help prioritize efforts, demonstrate due diligence, and may support compliance, though they are not always legally required.',
+      difficulty: 'medium',
+      points: 15,
+    },
+  ],
+  estimatedDuration: 30,
+  prerequisites: ['risk-assessment'],
+  learningObjectives: ['Understand major security frameworks', 'Compare framework approaches', 'Apply frameworks to organizational context'],
+  tags: ['frameworks', 'nist', 'iso', 'cis', 'compliance', 'advanced'],
+  isActive: true,
+  totalPoints: 70,
+};
+
+export default securityFrameworksModule;

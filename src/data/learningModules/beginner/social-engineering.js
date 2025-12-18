@@ -1,0 +1,173 @@
+export const socialEngineeringModule = {
+  moduleId: 'social-engineering',
+  title: 'Understanding Social Engineering Tactics',
+  description: 'Learn how attackers manipulate human psychology to bypass security measures and how to protect yourself from these manipulation techniques.',
+  level: 'beginner',
+  order: 4,
+  content: {
+    introduction: 'Social engineering is the art of manipulating people into divulging confidential information or performing actions that compromise security. Unlike technical hacking, social engineering exploits human psychology—trust, fear, curiosity, and helpfulness. Understanding these tactics is crucial because the human element is often the weakest link in security.',
+    sections: [
+      {
+        title: 'What is Social Engineering?',
+        content: 'Social engineering is a manipulation technique that exploits human psychology to gain access to buildings, systems, or data. Attackers use psychological manipulation rather than technical means to trick people into breaking security procedures. They may pretend to be someone they are not, create a sense of urgency, appeal to authority, or exploit natural human tendencies like wanting to be helpful. Social engineering works because it targets people, who are often more vulnerable than the technical systems protecting them.',
+        examples: [
+          'Attacker poses as IT support and asks for your password',
+          'Caller claims to be from the bank and needs to verify your account details',
+          'Email from "CEO" requesting urgent wire transfer',
+          'Person at the door claiming to be a delivery person to gain building access',
+        ],
+        keyPoints: [
+          'Exploits human psychology, not technical vulnerabilities',
+          'Relies on trust, authority, urgency, and helpfulness',
+          'Can be conducted in person, over phone, or online',
+          'Effective because people are often the weakest security link',
+        ],
+      },
+      {
+        title: 'Common Social Engineering Techniques',
+        content: 'Attackers use various techniques depending on their target and goal. Pretexting involves creating a fabricated scenario to engage the target. Baiting offers something enticing to trick victims into a trap. Quid pro quo promises a benefit in exchange for information. Tailgating means following authorized personnel into restricted areas. Impersonation involves posing as someone with authority. Each technique manipulates different aspects of human nature.',
+        examples: [
+          'Pretexting: Caller poses as researcher conducting a survey to gather information',
+          'Baiting: USB drive labeled "Executive Salaries" left in parking lot',
+          'Quid pro quo: Fake tech support offers to fix computer in exchange for remote access',
+          'Tailgating: Following employees through secure doors without badging in',
+        ],
+        keyPoints: [
+          'Pretexting creates fictional scenarios',
+          'Baiting uses curiosity to lure victims',
+          'Quid pro quo offers benefits for information',
+          'Tailgating exploits physical security',
+        ],
+      },
+      {
+        title: 'Psychological Triggers Used by Attackers',
+        content: 'Social engineers exploit specific psychological triggers to bypass rational thinking. Authority makes people comply with perceived authority figures. Urgency creates pressure to act without thinking. Fear makes people react emotionally rather than logically. Trust exploits existing relationships or builds false ones. Greed appeals to desire for rewards or money. Understanding these triggers helps you recognize when you are being manipulated.',
+        examples: [
+          'Authority: "This is the IT director. I need your password immediately."',
+          'Urgency: "Your account will be suspended in 10 minutes unless you act now."',
+          'Fear: "We detected suspicious activity on your credit card."',
+          'Trust: Message from what appears to be a colleague: "Can you help with this?"',
+        ],
+        keyPoints: [
+          'Authority triggers compliance with perceived power',
+          'Urgency prevents careful consideration',
+          'Fear overrides logical thinking',
+          'Trust exploits relationships and helpfulness',
+        ],
+      },
+      {
+        title: 'Protecting Yourself from Social Engineering',
+        content: 'Defense against social engineering requires skepticism and verification. Always verify the identity of people requesting information, especially if they create urgency. Be suspicious of unsolicited contact. Never provide sensitive information unless you initiated the contact and can verify the recipient. Follow established security procedures even when pressured. Remember that legitimate organizations will not ask for passwords or pressure you with urgent threats. When in doubt, disconnect and verify through known, trusted channels.',
+        examples: [
+          'Suspicious call → Hang up and call back using official number',
+          'Urgent email request → Verify through separate communication channel',
+          'Someone requesting badge access → Follow company policy and report to security',
+          'Unsolicited tech support → Decline help unless you requested assistance',
+        ],
+        keyPoints: [
+          'Verify identity through independent channels',
+          'Be skeptical of unsolicited contact',
+          'Never share sensitive information under pressure',
+          'Follow security procedures even when inconvenient',
+        ],
+      },
+      {
+        title: 'Corporate Social Engineering Threats',
+        content: 'Businesses are frequent targets of social engineering because the stakes are higher. Attackers may target employees to gain access to corporate networks, financial systems, or sensitive data. CEO fraud tricks employees into authorizing fraudulent wire transfers by impersonating executives. Business email compromise uses spoofed or compromised email accounts to request payments or information. Employees need training to recognize these attacks and proper channels to verify unusual requests, especially those involving money or sensitive data.',
+        examples: [
+          'CEO fraud: Email appearing to be from CEO requesting urgent wire transfer',
+          'Vendor impersonation: Fake invoice from supposed supplier with new bank details',
+          'HR phishing: Fake HR email requesting W-2 information for all employees',
+          'IT support scam: Call claiming to be from IT needing remote access to fix issues',
+        ],
+        keyPoints: [
+          'Businesses face sophisticated social engineering attacks',
+          'CEO fraud targets financial authorization processes',
+          'Business email compromise can cost millions',
+          'Proper verification procedures protect organizations',
+        ],
+      },
+    ],
+    summary: 'Social engineering attacks succeed by exploiting human nature rather than technical flaws. By understanding the psychological tactics attackers use—authority, urgency, fear, and trust—you can recognize manipulation attempts. Always verify requests through independent channels, be skeptical of unsolicited contact, and never let pressure override security procedures. Remember: attackers count on you acting before thinking. Slow down and verify.',
+  },
+  questions: [
+    {
+      question: 'What distinguishes social engineering from traditional hacking?',
+      options: [
+        'Social engineering is legal while hacking is illegal',
+        'Social engineering exploits human psychology instead of technical vulnerabilities',
+        'Social engineering only works on social media platforms',
+        'Social engineering is less effective than technical hacking',
+      ],
+      correctAnswer: 1,
+      explanation: 'Social engineering exploits human psychology and behavior instead of technical vulnerabilities in systems. It manipulates people into breaking security procedures or divulging confidential information through psychological tactics rather than technical exploits.',
+      difficulty: 'easy',
+      points: 10,
+    },
+    {
+      question: 'Which social engineering technique involves following authorized personnel into a restricted area?',
+      options: [
+        'Pretexting',
+        'Baiting',
+        'Tailgating',
+        'Quid pro quo',
+      ],
+      correctAnswer: 2,
+      explanation: 'Tailgating is the social engineering technique where an unauthorized person follows an authorized person into a restricted area without proper credentials. This exploits human politeness and the reluctance to confront someone or let a door close on them.',
+      difficulty: 'medium',
+      points: 15,
+    },
+    {
+      question: 'What psychological trigger does "Your account will be locked in 5 minutes" exploit?',
+      options: [
+        'Greed',
+        'Curiosity',
+        'Urgency',
+        'Authority',
+      ],
+      correctAnswer: 2,
+      explanation: 'This statement exploits urgency by creating time pressure that prompts people to act quickly without thinking or verifying. Urgency is a common social engineering tactic that bypasses rational decision-making.',
+      difficulty: 'easy',
+      points: 10,
+    },
+    {
+      question: 'What is the best response when someone calls claiming to be from IT support and asks for your password?',
+      options: [
+        'Provide the password if they sound professional',
+        'Ask them to prove their identity by providing your password first',
+        'Refuse to provide the password and verify their identity through official channels',
+        'Give a fake password to test if they are legitimate',
+      ],
+      correctAnswer: 2,
+      explanation: 'Never provide your password over the phone, even to apparent IT support. Legitimate IT departments never ask for passwords. Refuse the request politely, end the call, and verify their identity through official company channels or your organization\'s IT helpdesk.',
+      difficulty: 'medium',
+      points: 15,
+    },
+    {
+      question: 'What is CEO fraud?',
+      options: [
+        'When a CEO commits financial crimes',
+        'Social engineering attack where attackers impersonate executives to authorize fraudulent transactions',
+        'Legitimate corporate restructuring',
+        'When a CEO\'s social media account is hacked',
+      ],
+      correctAnswer: 1,
+      explanation: 'CEO fraud is a social engineering attack where cybercriminals impersonate executives (usually via email) to trick employees into authorizing wire transfers or divulging sensitive information. It exploits authority and urgency, often resulting in significant financial losses for organizations.',
+      difficulty: 'medium',
+      points: 15,
+    },
+  ],
+  estimatedDuration: 20,
+  prerequisites: ['phishing-awareness'],
+  learningObjectives: [
+    'Understand what social engineering is and why it is effective',
+    'Recognize common social engineering techniques like pretexting, baiting, and tailgating',
+    'Identify psychological triggers used to manipulate victims',
+    'Learn defensive strategies to protect against social engineering attacks',
+  ],
+  tags: ['social engineering', 'manipulation', 'psychology', 'phishing', 'pretexting', 'beginner'],
+  isActive: true,
+  totalPoints: 65,
+};
+
+export default socialEngineeringModule;

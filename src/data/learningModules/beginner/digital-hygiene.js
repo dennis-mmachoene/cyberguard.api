@@ -1,0 +1,173 @@
+export const digitalHygieneModule = {
+  moduleId: 'digital-hygiene',
+  title: 'Digital Hygiene Fundamentals',
+  description: 'Learn essential practices for maintaining good digital hygiene to protect your personal information and devices from cyber threats.',
+  level: 'beginner',
+  order: 1,
+  content: {
+    introduction: 'Digital hygiene refers to the practices and habits that keep your devices, data, and online presence secure and healthy. Just like personal hygiene keeps you physically healthy, digital hygiene protects you from cyber threats and keeps your digital life running smoothly.',
+    sections: [
+      {
+        title: 'What is Digital Hygiene?',
+        content: 'Digital hygiene encompasses all the practices you should follow to maintain security and privacy in your digital life. This includes keeping software updated, using strong passwords, being cautious about what you share online, and regularly backing up important data. Good digital hygiene reduces your risk of falling victim to cyberattacks, identity theft, and data loss.',
+        examples: [
+          'Updating your operating system when prompted',
+          'Using antivirus software and keeping it current',
+          'Thinking twice before clicking on links in emails',
+          'Regularly reviewing your privacy settings on social media',
+        ],
+        keyPoints: [
+          'Digital hygiene is about consistent, preventive practices',
+          'Small actions taken regularly have big security impacts',
+          'Everyone is responsible for their own digital hygiene',
+          'Good habits protect both you and others in your network',
+        ],
+      },
+      {
+        title: 'Software Updates and Patches',
+        content: 'Software updates are critical for security. They fix vulnerabilities that hackers could exploit to gain access to your system. When you ignore update notifications, you leave known security holes open. Updates also improve performance and add new features, but their primary importance is security. Set your devices to update automatically whenever possible, and never postpone security updates.',
+        examples: [
+          'Enabling automatic updates on Windows, macOS, iOS, and Android',
+          'Updating your web browser to the latest version',
+          'Keeping all apps on your phone up to date',
+          'Updating firmware on routers and IoT devices',
+        ],
+        keyPoints: [
+          'Updates patch security vulnerabilities',
+          'Automatic updates reduce the risk of forgetting',
+          'Apply updates as soon as they become available',
+          'Update all devices, not just computers and phones',
+        ],
+      },
+      {
+        title: 'Device Security Basics',
+        content: 'Securing your devices starts with basic protections. Use screen locks with strong PINs, passwords, or biometrics. Enable device encryption to protect data if your device is lost or stolen. Be cautious about what apps you install and only download from official sources. Use antivirus software on computers and keep it updated. Enable find-my-device features so you can locate, lock, or wipe a lost device remotely.',
+        examples: [
+          'Setting a 6-digit PIN or alphanumeric password on your phone',
+          'Enabling Face ID or fingerprint authentication',
+          'Installing apps only from official app stores',
+          'Using Windows Defender or reputable antivirus software',
+        ],
+        keyPoints: [
+          'Always use device locks with strong credentials',
+          'Enable encryption on all devices',
+          'Be selective about installed applications',
+          'Configure remote wipe capabilities',
+        ],
+      },
+      {
+        title: 'Data Backup Strategies',
+        content: 'Backing up your data is essential to protect against ransomware, hardware failure, and accidental deletion. Follow the 3-2-1 backup rule: keep 3 copies of your data, on 2 different types of storage media, with 1 copy stored offsite or in the cloud. Automate backups to ensure they happen regularly without you having to remember. Test your backups periodically to make sure you can actually restore your data when needed.',
+        examples: [
+          'Using cloud services like Google Drive, iCloud, or OneDrive',
+          'Maintaining an external hard drive for local backups',
+          'Setting up automatic Time Machine backups on macOS',
+          'Using Windows Backup or third-party backup software',
+        ],
+        keyPoints: [
+          'Follow the 3-2-1 backup rule',
+          'Automate backups to ensure consistency',
+          'Store one backup copy offsite or in the cloud',
+          'Regularly test backup restoration',
+        ],
+      },
+      {
+        title: 'Safe Browsing Practices',
+        content: 'Web browsers are a primary gateway for cyber threats. Use modern, updated browsers with built-in security features. Be cautious about extensions—only install those from trusted sources and remove ones you do not use. Enable pop-up blockers and phishing protection. Use HTTPS Everywhere or similar extensions to ensure encrypted connections. Clear your browsing data regularly and consider using private/incognito mode for sensitive activities.',
+        examples: [
+          'Using Chrome, Firefox, Safari, or Edge with auto-updates enabled',
+          'Installing only essential browser extensions from official stores',
+          'Checking for HTTPS (padlock icon) before entering sensitive information',
+          'Using private browsing for banking and sensitive transactions',
+        ],
+        keyPoints: [
+          'Keep your browser updated at all times',
+          'Minimize browser extensions',
+          'Always verify HTTPS connections',
+          'Clear cookies and cache periodically',
+        ],
+      },
+    ],
+    summary: 'Digital hygiene is the foundation of personal cybersecurity. By maintaining good habits—updating software, securing devices, backing up data, and browsing safely—you significantly reduce your vulnerability to cyber threats. These practices require minimal effort but provide maximum protection. Make digital hygiene part of your daily routine, just like physical hygiene.',
+  },
+  questions: [
+    {
+      question: 'What is the primary reason for installing software updates promptly?',
+      options: [
+        'To get new features faster',
+        'To patch security vulnerabilities',
+        'To improve device performance',
+        'To free up storage space',
+      ],
+      correctAnswer: 1,
+      explanation: 'The primary reason for installing updates promptly is to patch security vulnerabilities. Updates fix known security holes that attackers could exploit. While updates may also bring new features and performance improvements, security is the main priority.',
+      difficulty: 'easy',
+      points: 10,
+    },
+    {
+      question: 'What does the 3-2-1 backup rule recommend?',
+      options: [
+        '3 backups, 2 locations, 1 cloud service',
+        '3 copies of data, 2 storage types, 1 offsite',
+        '3 devices, 2 hard drives, 1 USB stick',
+        '3 updates weekly, 2 scans daily, 1 backup monthly',
+      ],
+      correctAnswer: 1,
+      explanation: 'The 3-2-1 backup rule states you should keep 3 copies of your data, on 2 different types of storage media, with 1 copy stored offsite or in the cloud. This protects against multiple failure scenarios including hardware failure, theft, and disasters.',
+      difficulty: 'medium',
+      points: 15,
+    },
+    {
+      question: 'Which of the following is NOT a recommended device security practice?',
+      options: [
+        'Using a strong PIN or password',
+        'Enabling device encryption',
+        'Installing apps from any source for convenience',
+        'Enabling find-my-device features',
+      ],
+      correctAnswer: 2,
+      explanation: 'Installing apps from any source is NOT recommended. You should only download apps from official stores like Google Play or the Apple App Store to avoid malicious software. The other options are all important security practices.',
+      difficulty: 'easy',
+      points: 10,
+    },
+    {
+      question: 'When browsing the web, what indicates a secure, encrypted connection?',
+      options: [
+        'A colorful website design',
+        'The absence of advertisements',
+        'HTTPS in the URL and a padlock icon',
+        'A .com domain extension',
+      ],
+      correctAnswer: 2,
+      explanation: 'HTTPS in the URL and a padlock icon in the address bar indicate a secure, encrypted connection. This means data transmitted between your browser and the website is encrypted and protected from eavesdropping.',
+      difficulty: 'easy',
+      points: 10,
+    },
+    {
+      question: 'Why should you be selective about browser extensions?',
+      options: [
+        'They consume too much memory',
+        'They can access your browsing data and pose security risks',
+        'They make the browser slower',
+        'They are difficult to remove',
+      ],
+      correctAnswer: 1,
+      explanation: 'Browser extensions can access your browsing data and potentially pose security risks if they are malicious or poorly designed. You should only install extensions from trusted sources, keep them to a minimum, and remove any you do not actively use.',
+      difficulty: 'medium',
+      points: 15,
+    },
+  ],
+  estimatedDuration: 15,
+  prerequisites: [],
+  learningObjectives: [
+    'Understand the importance of digital hygiene in cybersecurity',
+    'Learn to keep software and devices updated and secure',
+    'Master data backup strategies using the 3-2-1 rule',
+    'Practice safe browsing habits to avoid online threats',
+  ],
+  tags: ['digital hygiene', 'basics', 'updates', 'backups', 'browsing', 'beginner'],
+  isActive: true,
+  totalPoints: 60,
+};
+
+export default digitalHygieneModule;
